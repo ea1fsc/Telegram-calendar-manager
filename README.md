@@ -36,12 +36,29 @@ A Telegram bot to manage calendars hosted on a self-hosted NextCloud instance. T
   ```
 
 2. Create a .env or config.env file with your credentials:
-  - `TELEGRAM_BOT_TOKEN`= YOUR_TELEGRAM_BOT_TOKEN
-  - `NEXTCLOUD_URL`= https://NEXTCLOUD_URL
-  - `NEXTCLOUD_USER`= YOUR_NEXTCLOUD_USERNAME
-  - `NEXTCLOUD_PASSWORD`= YOUR_NEXTCLOUD_PASSWORD
-  - `SMTP_EMAIL`= YOUR_EMAIL
-  - `SMTP_PASSWORD`= YOUR_EMAIL_PASSWORD
+  ```env
+    # Telegram Bot
+    TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+
+    # NextCloud CalDAV
+    NEXTCLOUD_URL=https://NEXTCLOUD_URL
+    NEXTCLOUD_USER=YOUR_NEXTCLOUD_USERNAME
+    NEXTCLOUD_PASSWORD=YOUR_NEXTCLOUD_PASSWORD
+
+    # SMTP Email Configuration (for sending invitations)
+    SMTP_EMAIL=YOUR_EMAIL_ADDRESS
+    SMTP_PASSWORD=YOUR_EMAIL_PASSWORD
+    SMTP_HOST=smtp.example.com
+    SMTP_PORT=587          # 587 for STARTTLS, 465 for SSL/TLS
+    SMTP_USE_TLS=True      # True if using STARTTLS
+    SMTP_USE_SSL=False     # True if using SSL/TLS on port 465
+
+    # Optional: Default timezone for events
+    DEFAULT_TIMEZONE=Europe/Madrid
+
+    # Optional: Notification settings
+    NOTIFICATION_ADVANCE_MINUTES=30  # minutes before event to send Telegram reminder
+  ```
 
 3. Install dependencies:
   ```bash

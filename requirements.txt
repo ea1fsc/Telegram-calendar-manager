@@ -1,0 +1,20 @@
+# Telegram bot
+python-telegram-bot==20.6
+
+# NextCloud CalDAV client
+caldav==0.9.1
+
+# Scheduler for notifications
+APScheduler==3.11.0
+
+# Email handling
+yagmail==0.15.294
+
+# Environment variables loader
+python-dotenv==1.0.1
+
+# Optional: HTTP requests for API calls (if needed)
+requests>=2.31.0
+
+# Optional: date handling
+python-dateutil>=2.8.2
