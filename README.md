@@ -59,7 +59,7 @@ A Telegram bot to manage calendars hosted on a self-hosted NextCloud instance. T
 
     # Optional: Notification settings
     NOTIFICATION_ADVANCE_MINUTES=30  # minutes before event to send Telegram reminder
-  ``
+  ```
 
 3. Install dependencies:
   ```bash
