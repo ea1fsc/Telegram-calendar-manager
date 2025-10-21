@@ -35,7 +35,8 @@ A Telegram bot to manage calendars hosted on a self-hosted NextCloud instance. T
   cd Telegram-calendar-manager
   ```
 
-2. Create a .env or config.env file with your credentials:
+2. Create a `.env` or `config.env` file with your credentials:
+
   ```env
     # Telegram Bot
     TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
@@ -58,7 +59,7 @@ A Telegram bot to manage calendars hosted on a self-hosted NextCloud instance. T
 
     # Optional: Notification settings
     NOTIFICATION_ADVANCE_MINUTES=30  # minutes before event to send Telegram reminder
-  ```
+  ``
 
 3. Install dependencies:
   ```bash
